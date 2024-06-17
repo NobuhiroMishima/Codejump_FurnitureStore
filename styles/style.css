@@ -1,0 +1,29 @@
+header {
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .menu__btn {
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+header .menu__btn > span {
+  display: block;
+  width: 30px;
+  height: 2px;
+  background-color: #333333;
+}
+header .menu__btn > span:first-child {
+  margin-top: 9px;
+  margin-bottom: 8px;
+}
+header .menu__btn > span:last-child {
+  margin-bottom: 9px;
+}/*# sourceMappingURL=style.css.map */
