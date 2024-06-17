@@ -2,6 +2,33 @@
 
 $cBlack: #333333;
 
+#container{
+    position: relative;
+
+    & .menu__cover{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $cBlack;
+        z-index: 10;
+        // opacity: 0;
+        visibility: hidden;
+
+    }
+
+    &.menu-open{
+        & .menu__cover{
+            background-color: $cBlack;
+            visibility: visible;
+
+          }
+    }
+
+
+}
+
 header{
     max-width: 1360px;
     margin: 0 auto;
@@ -17,6 +44,7 @@ header{
         border: 0;
         background-color: transparent;
         cursor: pointer;
+        z-index: 20;
         
         & > span{
             display: block;
