@@ -1,32 +1,21 @@
 // @use "../globals" as *;
 
 $cBlack: #333333;
+$cWhite: white;
 
-#container{
-    position: relative;
-
-    & .menu__cover{
+//ハンバーガーメニュークリックのスタイル
+.menu-open{
+    &::after{
+        content: '';
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
+        position: fixed;
+        opacity: 0.9;
         background-color: $cBlack;
-        z-index: 10;
-        // opacity: 0;
-        visibility: hidden;
-
     }
-
-    &.menu-open{
-        & .menu__cover{
-            background-color: $cBlack;
-            visibility: visible;
-
-          }
-    }
-
-
 }
 
 header{
@@ -34,8 +23,12 @@ header{
     margin: 0 auto;
     padding: 0 40px;
     display: flex;
+    position: fixed;
     justify-content: space-between;
+    left: 0;
+    right: 0;
     align-items: center;
+    background-color: $cWhite;
 
     & .menu__btn{
         width: 30px;
@@ -68,7 +61,7 @@ header{
 .content{
     max-width: 1360px;
     margin: 0 auto;
-    padding: 0 40px;
+    padding: 80px 40px 0 40px;
     
     ul{
         list-style: none;
@@ -92,7 +85,34 @@ header{
         margin-top: 40px;
         text-align: center;
         text-decoration: none;
+        z-index: 10;
     }
 
 
+}
+
+footer{
+    max-width: 1360px;
+    margin: 0 auto;
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+
+    & ul{
+        list-style: none;
+        padding-left: 0;
+
+        & li{
+            display: inline-block;
+            margin-right: 30px;
+
+            & a{
+                text-decoration: none;
+            }
+        }
+    }
 }
