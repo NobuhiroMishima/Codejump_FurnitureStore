@@ -64,3 +64,35 @@ header{
         
     }
 }
+
+.content{
+    max-width: 1360px;
+    margin: 0 auto;
+    padding: 0 40px;
+    
+    ul{
+        list-style: none;
+        padding-left: 0;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    
+        & li{
+            width: 22%;
+
+            & a{
+                text-decoration: none;
+            }
+    
+        }
+    }
+
+    .btn{
+        display: block;
+        margin-top: 40px;
+        text-align: center;
+        text-decoration: none;
+    }
+
+
+}

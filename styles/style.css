@@ -45,4 +45,29 @@ header .menu__btn > span:first-child {
 }
 header .menu__btn > span:last-child {
   margin-bottom: 9px;
+}
+
+.content {
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+.content ul {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.content ul li {
+  width: 22%;
+}
+.content ul li a {
+  text-decoration: none;
+}
+.content .btn {
+  display: block;
+  margin-top: 40px;
+  text-align: center;
+  text-decoration: none;
 }/*# sourceMappingURL=style.css.map */
