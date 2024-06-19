@@ -10,10 +10,8 @@
   background-color: #333333;
 }
 .menu__open .header__nav {
-  display: block;
-  z-index: 10;
   transform: translateX(200px);
-  transition: transform 0.5s;
+  transition: 0.3s;
 }
 .menu__open .menu__btn {
   z-index: 10;
@@ -43,7 +41,7 @@
   background-color: white;
 }
 .header__nav {
-  display: none;
+  z-index: 10;
   position: fixed;
   top: 0;
   left: -200px;
