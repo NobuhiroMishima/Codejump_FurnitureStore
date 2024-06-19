@@ -11,10 +11,27 @@
 }
 .menu__open .header__nav {
   display: block;
+  z-index: 10;
+  transform: translateX(200px);
+  transition: transform 0.5s;
+}
+.menu__open .menu__btn {
+  z-index: 10;
+}
+.menu__open .menu__btn > span {
+  background-color: white !important;
+  transition-duration: 0.5s;
+}
+.menu__open .menu__btn > span:first-child {
+  transform: rotate(-45deg) translateY(7px);
+}
+.menu__open .menu__btn > span:last-child {
+  transform: rotate(45deg) translateY(-7px);
 }
 
-header {
+.header {
   max-width: 1360px;
+  margin: 0 auto;
   height: 80px;
   padding: 0 40px;
   display: flex;
@@ -25,10 +42,25 @@ header {
   align-items: center;
   background-color: white;
 }
-header .header__nav {
+.header__nav {
   display: none;
+  position: fixed;
+  top: 0;
+  left: -200px;
+  padding: 36px 50px;
 }
-header .menu__btn {
+.header__ul {
+  list-style: none;
+  padding-left: 0;
+}
+.header__li {
+  margin-bottom: 14px;
+}
+.header__li a {
+  text-decoration: none;
+  color: white;
+}
+.header .menu__btn {
   width: 30px;
   height: 30px;
   padding: 0;
@@ -37,17 +69,17 @@ header .menu__btn {
   cursor: pointer;
   z-index: 20;
 }
-header .menu__btn > span {
+.header .menu__btn > span {
   display: block;
   width: 30px;
   height: 2px;
   background-color: #333333;
 }
-header .menu__btn > span:first-child {
+.header .menu__btn > span:first-child {
   margin-top: 9px;
   margin-bottom: 8px;
 }
-header .menu__btn > span:last-child {
+.header .menu__btn > span:last-child {
   margin-bottom: 9px;
 }
 
@@ -77,24 +109,26 @@ header .menu__btn > span:last-child {
   z-index: 10;
 }
 
-footer {
+.footer {
   max-width: 1360px;
   margin: 0 auto;
   padding: 0 40px;
   display: flex;
   justify-content: space-between;
   position: absolute;
-  bottom: 0;
+  bottom: 20px;
   left: 0;
+  right: 0;
 }
-footer ul {
+.footer ul {
   list-style: none;
   padding-left: 0;
 }
-footer ul li {
+.footer ul li {
   display: inline-block;
   margin-right: 30px;
 }
-footer ul li a {
+.footer ul li a {
   text-decoration: none;
+  color: #333333;
 }/*# sourceMappingURL=style.css.map */
