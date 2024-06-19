@@ -1,4 +1,4 @@
-.menu-open::after {
+.menu__open::after {
   content: "";
   position: absolute;
   top: 0;
@@ -9,10 +9,13 @@
   opacity: 0.9;
   background-color: #333333;
 }
+.menu__open .header__nav {
+  display: block;
+}
 
 header {
   max-width: 1360px;
-  margin: 0 auto;
+  height: 80px;
   padding: 0 40px;
   display: flex;
   position: fixed;
@@ -21,6 +24,9 @@ header {
   right: 0;
   align-items: center;
   background-color: white;
+}
+header .header__nav {
+  display: none;
 }
 header .menu__btn {
   width: 30px;

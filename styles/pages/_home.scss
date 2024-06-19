@@ -4,7 +4,7 @@ $cBlack: #333333;
 $cWhite: white;
 
 //ハンバーガーメニュークリックのスタイル
-.menu-open{
+.menu__open{
     &::after{
         content: '';
         position: absolute;
@@ -16,11 +16,15 @@ $cWhite: white;
         opacity: 0.9;
         background-color: $cBlack;
     }
+
+    & .header__nav {
+        display: block;
+    }
 }
 
 header{
     max-width: 1360px;
-    margin: 0 auto;
+    height: 80px;
     padding: 0 40px;
     display: flex;
     position: fixed;
@@ -29,6 +33,10 @@ header{
     right: 0;
     align-items: center;
     background-color: $cWhite;
+
+    & .header__nav {
+        display: none;
+    }
 
     & .menu__btn{
         width: 30px;
