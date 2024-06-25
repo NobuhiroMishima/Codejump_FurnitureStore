@@ -1,6 +1,10 @@
-.menu__open::after {
+.menu__open {
+  position: relative;
+}
+.menu__open .cover {
   content: "";
   position: absolute;
+  display: block;
   top: 0;
   left: 0;
   width: 100%;
@@ -21,10 +25,10 @@
   transition-duration: 0.5s;
 }
 .menu__open .menu__btn > span:first-child {
-  transform: rotate(-45deg) translateY(7px);
+  transform: rotate(-45deg) translateY(4px);
 }
 .menu__open .menu__btn > span:last-child {
-  transform: rotate(45deg) translateY(-7px);
+  transform: rotate(45deg) translateY(-4px);
 }
 
 .hover:hover {
@@ -84,10 +88,14 @@
 }
 .header .menu__btn > span:first-child {
   margin-top: 9px;
-  margin-bottom: 8px;
+  margin-bottom: 4px;
 }
 .header .menu__btn > span:last-child {
+  margin-top: 4px;
   margin-bottom: 9px;
+}
+.header div {
+  display: none;
 }
 
 .content {

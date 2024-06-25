@@ -5,9 +5,12 @@ $cWhite: white;
 
 //ハンバーガーメニュークリックのスタイル
 .menu__open{
-    &::after{
+    position: relative;
+
+    & .cover{
         content: '';
         position: absolute;
+        display: block;
         top: 0;
         left: 0;
         width: 100%;
@@ -28,10 +31,10 @@ $cWhite: white;
             background-color: $cWhite !important;
             transition-duration: 0.5s;
             &:first-child{
-                transform: rotate(-45deg) translateY(7px);
+                transform: rotate(-45deg) translateY(4px);
             }
             &:last-child{
-                transform: rotate(45deg) translateY(-7px);
+                transform: rotate(45deg) translateY(-4px);
 
             }
         }
@@ -103,15 +106,19 @@ $cWhite: white;
             background-color: $cBlack;
             &:first-child{
                 margin-top: 9px;
-                margin-bottom: 8px;
+                margin-bottom: 4px;
             }
             &:last-child{
+                margin-top: 4px;
                 margin-bottom: 9px;
             }
         }
 
 
         
+    }
+    & div{
+        display: none;
     }
 }
 
