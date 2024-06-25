@@ -1,0 +1,16 @@
+@use "../globals/variables" as *;
+
+.font-xs{
+    font-size: 10px;
+    color: $cBlack;
+}
+
+.font-sm{
+    font-size: 12px;
+    color: $cBlack;
+}
+
+.font-md{
+    font-size: 14px;
+    color: $cBlack;
+}

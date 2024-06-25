@@ -1,3 +1,12 @@
+.hover:hover {
+  opacity: 0.7;
+  transition: opacity 0.3s;
+  color: #333333;
+}
+.hover a {
+  color: #333333;
+}
+
 .menu__open {
   position: relative;
 }
@@ -32,12 +41,18 @@
   transform: rotate(45deg) translateY(-4px);
 }
 
-.hover:hover {
-  opacity: 0.7;
-  transition: opacity 0.3s;
+.font-xs, .footer p {
+  font-size: 10px;
   color: #333333;
 }
-.hover a {
+
+.font-sm, .content ul li a, .footer ul li a {
+  font-size: 12px;
+  color: #333333;
+}
+
+.font-md, .content .btn {
+  font-size: 14px;
   color: #333333;
 }
 
@@ -53,6 +68,9 @@
   right: 0;
   align-items: center;
   background-color: white;
+}
+.header h1 a img {
+  width: 180px;
 }
 .header__nav {
   z-index: 10;
@@ -117,16 +135,21 @@
 }
 @media screen and (min-width: 900px) {
   .content ul li {
-    width: 22%;
+    width: 23%;
   }
 }
 .content ul li a {
   text-decoration: none;
+  color: #333333;
+}
+.content ul li a .item {
+  margin-top: 10px;
 }
 .content .btn {
   display: block;
   text-align: center;
   text-decoration: none;
+  color: #333333;
   z-index: 10;
 }
 
@@ -157,5 +180,8 @@
 }
 .footer ul li a {
   text-decoration: none;
+  color: #333333;
+}
+.footer p {
   color: #333333;
 }/*# sourceMappingURL=style.css.map */

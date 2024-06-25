@@ -1,63 +1,8 @@
-// @use "../globals" as *;
-
-$cBlack: #333333;
-$cWhite: white;
-
-//ハンバーガーメニュークリックのスタイル
-.menu__open{
-    position: relative;
-
-    & .cover{
-        content: '';
-        position: absolute;
-        display: block;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        position: fixed;
-        opacity: 0.9;
-        background-color: $cBlack;
-        cursor: pointer;
-    }
-
-    & .header__nav {
-        transform: translateX(200px);
-        transition: 0.3s
-    }
-
-    & .menu__btn{
-        z-index: 10;
-        & > span{
-            background-color: $cWhite !important;
-            transition-duration: 0.5s;
-            &:first-child{
-                transform: rotate(-45deg) translateY(4px);
-            }
-            &:last-child{
-                transform: rotate(45deg) translateY(-4px);
-
-            }
-        }
-
-    }
-}
-
-//hoverのスタイル
-.hover{
-    &:hover{
-        opacity: 0.7;
-        transition: opacity 0.3s;
-        color: $cBlack;
-    }
-
-    & a{
-        color: $cBlack;
-    }
-}
+@use "../globals/variables" as *;
+@use "../parts/common" as *;
 
 .header{
-    max-width: 1360px;
+    max-width: $contentMaxWidth;
     margin: 0 auto;
     height: 80px;
     padding: 0 40px;
@@ -69,6 +14,9 @@ $cWhite: white;
     align-items: center;
     background-color: $cWhite;
 
+    & h1 a img{
+        width: 180px;
+    }
     &__nav {
         z-index: 10;  
         position: fixed;
@@ -124,7 +72,7 @@ $cWhite: white;
 }
 
 .content{
-    max-width: 1360px;
+    max-width: $contentMaxWidth;
     margin: 0 auto;
     padding: 80px 40px 120px 40px;
     
@@ -139,12 +87,19 @@ $cWhite: white;
             width: 47%;
             margin-bottom: 40px;
 
-            @media screen and (min-width: 900px){
-                width: 22%;
+            @media screen and (min-width: $breakpoints){
+                width: 23%;
             }
 
             & a{
                 text-decoration: none;
+                color: $cBlack;
+                @extend .font-sm;
+
+                & .item{
+                    margin-top: 10px;
+                }
+
             }
     
         }
@@ -154,14 +109,16 @@ $cWhite: white;
         display: block;
         text-align: center;
         text-decoration: none;
+        color: $cBlack;
         z-index: 10;
+        @extend .font-md;
     }
 
 
 }
 
 .footer{
-    max-width: 1360px;
+    max-width: $contentMaxWidth;
     margin: 0 auto;
     padding: 0 40px 20px 40px;
     display: flex;
@@ -170,7 +127,7 @@ $cWhite: white;
     bottom: 20px;
     left: 0;
     right: 0;
-    @media screen and (min-width: 900px){
+    @media screen and (min-width: $breakpoints){
         flex-direction: row;
         justify-content: space-between;
     }
@@ -189,7 +146,13 @@ $cWhite: white;
             & a{
                 text-decoration: none;
                 color: $cBlack;
+                @extend .font-sm;
             }
         }
+    }
+
+    & p{
+        color: $cBlack;
+        @extend .font-xs;
     }
 }
