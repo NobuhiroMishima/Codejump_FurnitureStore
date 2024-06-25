@@ -113,13 +113,13 @@
 }
 .content ul li {
   width: 22%;
+  margin-bottom: 40px;
 }
 .content ul li a {
   text-decoration: none;
 }
 .content .btn {
   display: block;
-  margin-top: 40px;
   text-align: center;
   text-decoration: none;
   z-index: 10;
