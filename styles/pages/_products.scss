@@ -1,0 +1,26 @@
+@use "../globals/variables" as *;
+@use "../parts/common" as *;
+
+.content h2{
+    margin-top: 40px;
+    margin-bottom: 30px;
+    font-weight: 500;
+    @extend .font-md;
+}
+
+.pagenation{
+    margin: 0 auto;
+    & ul{
+        justify-content: center;
+
+        & li.page{
+            width: 10px;
+            margin-right: 40px;
+            &:last-child{
+                margin: 0;
+            }
+        }
+    }
+
+
+}

@@ -51,7 +51,7 @@
   color: #333333;
 }
 
-.font-md, .content .btn {
+.font-md, .content h2, .content .btn {
   font-size: 14px;
   color: #333333;
 }
@@ -184,4 +184,24 @@
 }
 .footer p {
   color: #333333;
+}
+
+.content h2 {
+  margin-top: 40px;
+  margin-bottom: 30px;
+  font-weight: 500;
+}
+
+.pagenation {
+  margin: 0 auto;
+}
+.pagenation ul {
+  justify-content: center;
+}
+.pagenation ul li.page {
+  width: 10px;
+  margin-right: 40px;
+}
+.pagenation ul li.page:last-child {
+  margin: 0;
 }/*# sourceMappingURL=style.css.map */
