@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="styles/vendors/css-reset.css" />
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="/funitureStore/styles/vendors/css-reset.css" />
+    <link rel="stylesheet" href="/funitureStore/styles/style.css">
     <script src="scripts/main.js" defer></script>
 </head>
 <body>
