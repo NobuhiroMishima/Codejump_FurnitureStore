@@ -68,6 +68,7 @@
   right: 0;
   align-items: center;
   background-color: white;
+  z-index: 50;
 }
 .header h1 a img {
   width: 180px;
