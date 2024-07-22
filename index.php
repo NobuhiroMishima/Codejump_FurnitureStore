@@ -1,4 +1,11 @@
-<?php include('header.php') ?>
+<?php
+require_once 'config.php';
+
+
+//partials
+require_once SOURCE_BASE . 'partials/header.php';
+
+?>
 <main>
     <div class="content">
       <ul>
@@ -78,4 +85,6 @@
       <a class="btn hover" href="products.php">View More</a>
     </div>
 </main>
-<?php include('footer.php') ?>
+<?php
+require_once SOURCE_BASE . 'partials/footer.php';
+?>
