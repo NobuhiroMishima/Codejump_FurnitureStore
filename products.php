@@ -4,7 +4,7 @@
         <h2>Products</h2>
       <ul>
         <li class="container hover">
-          <a href="#">
+          <a href="item.php">
             <img src="images/item1.jpg">
             <div class="item">
               <p class="item__title">プロダクトタイトルプロダクトタイトル</p>
@@ -13,7 +13,7 @@
           </a>
         </li>
         <li class="container hover">
-          <a href="#">
+          <a href="item.php">
             <img src="images/item2.jpg">
             <div class="item">
               <p class="item__title">プロダクトタイトルプロダクトタイトル</p>
@@ -22,7 +22,7 @@
           </a>
         </li>
         <li class="container hover">
-          <a href="#">
+          <a href="item.php">
             <img src="images/item3.jpg">
             <div class="item">
               <p class="item__title">プロダクトタイトルプロダクトタイトル</p>
@@ -31,7 +31,7 @@
           </a>
         </li>
         <li class="container hover">
-          <a href="#">
+          <a href="item.php">
             <img src="images/item4.jpg">
             <div class="item">
               <p class="item__title">プロダクトタイトルプロダクトタイトル</p>
@@ -40,7 +40,7 @@
           </a>
         </li>
         <li class="container hover">
-          <a href="#">
+          <a href="item.php">
             <img src="images/item5.jpg">
             <div class="item">
               <p class="item__title">プロダクトタイトルプロダクトタイトル</p>
@@ -49,7 +49,7 @@
           </a>
         </li>
         <li class="container hover">
-          <a href="#">
+          <a href="item.php">
             <img src="images/item6.jpg">
             <div class="item">
               <p class="item__title">プロダクトタイトルプロダクトタイトル</p>
@@ -58,7 +58,7 @@
           </a>
         </li>
         <li class="container hover">
-          <a href="#">
+          <a href="item.php">
             <img src="images/item7.jpg">
             <div class="item">
               <p class="item__title">プロダクトタイトルプロダクトタイトル</p>
@@ -67,7 +67,7 @@
           </a>
         </li>
         <li class="container hover">
-          <a href="#">
+          <a href="item.php">
             <img src="images/item8.jpg">
             <div class="item">
               <p class="item__title">プロダクトタイトルプロダクトタイトル</p>
@@ -76,7 +76,7 @@
           </a>
         </li>
         <li class="container hover">
-          <a href="#">
+          <a href="item.php">
             <img src="images/item9.jpg">
             <div class="item">
               <p class="item__title">プロダクトタイトルプロダクトタイトル</p>
@@ -85,7 +85,7 @@
           </a>
         </li>
         <li class="container hover">
-          <a href="#">
+          <a href="item.php">
             <img src="images/item10.jpg">
             <div class="item">
               <p class="item__title">プロダクトタイトルプロダクトタイトル</p>
@@ -94,7 +94,7 @@
           </a>
         </li>
         <li class="container hover">
-          <a href="#">
+          <a href="item.php">
             <img src="images/item11.jpg">
             <div class="item">
               <p class="item__title">プロダクトタイトルプロダクトタイトル</p>
@@ -103,7 +103,7 @@
           </a>
         </li>
         <li class="container hover">
-          <a href="#">
+          <a href="item.php">
             <img src="images/item12.jpg">
             <div class="item">
               <p class="item__title">プロダクトタイトルプロダクトタイトル</p>
