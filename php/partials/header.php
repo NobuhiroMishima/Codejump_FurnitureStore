@@ -1,3 +1,8 @@
+<?php 
+namespace partials;
+
+function header() {
+?>
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -25,3 +30,6 @@
     </button>
     <div class="cover"></div>
   </header>
+  <?php 
+}
+  ?>

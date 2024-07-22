@@ -1,3 +1,8 @@
+<?php
+namespace partials;
+
+function footer() {
+?>
 <footer class="footer">
     <ul class="sns">
       <li><a class="hover" href="#">INSTAGRAM</a></li>
@@ -8,3 +13,6 @@
   </footer>
 </body>
 </html>
+<?php 
+}
+?>
