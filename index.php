@@ -5,12 +5,23 @@ use function lib\route;
 require_once 'config.php';
 
 //Library
+require_once SOURCE_BASE . 'libs/helper.php';
 require_once SOURCE_BASE . 'libs/router.php';
 
+// Model
+require_once SOURCE_BASE . 'models/item.model.php';
+
+// DB
+require_once SOURCE_BASE . 'db/datasource.php';
+require_once SOURCE_BASE . 'db/item.query.php';
 
 //partials
 require_once SOURCE_BASE . 'partials/header.php';
 require_once SOURCE_BASE . 'partials/footer.php';
+
+// View
+require_once SOURCE_BASE . 'views/home.php';
+
 
 session_start();
 try {

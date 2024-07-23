@@ -4,7 +4,7 @@ namespace controller\home;
 use db\ItemQuery;
 
 function get(){
-    $items = ItemQuery::fetchAllItems();
+    $items = ItemQuery::fetchItems(8);
     \view\home\index($items);
 }
 ?>

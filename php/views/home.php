@@ -3,87 +3,26 @@ namespace view\home;
 
 function index($items){
 
-    var_dump($items);
+?>
+    <main>
+    <div class="content">
+      <ul>
+        <?php foreach($items as $item): ?>
+        <li class="container hover">
+          <a href="item.php">
+            <img src="<?php echo BASE_IMAGE_PATH . $item->img_path ?>">
+            <div class="item">
+              <p class="item__title"><?php echo $item->name ?></p>
+              <p class="item__price">&yen;<?php echo $item->price ?> +tax</p>
+            </div>
+          </a>
+        </li>
+        <?php endforeach; ?>
+      </ul>
+      <a class="btn hover" href="products.php">View More</a>
+    </div>
+</main>
 
-//     <main>
-//     <div class="content">
-//       <ul>
-//         <li class="container hover">
-//           <a href="item.php">
-//             <img src="images/item1.jpg">
-//             <div class="item">
-//               <p class="item__title">プロダクトタイトルプロダクトタイトル</p>
-//               <p class="item__price">&yen;99,999 +tax</p>
-//             </div>
-//           </a>
-//         </li>
-//         <li class="container hover">
-//           <a href="item.php">
-//             <img src="images/item2.jpg">
-//             <div class="item">
-//               <p class="item__title">プロダクトタイトルプロダクトタイトル</p>
-//               <p class="item__price">&yen;99,999 +tax</p>
-//             </div>
-//           </a>
-//         </li>
-//         <li class="container hover">
-//           <a href="item.php">
-//             <img src="images/item3.jpg">
-//             <div class="item">
-//               <p class="item__title">プロダクトタイトルプロダクトタイトル</p>
-//               <p class="item__price">&yen;99,999 +tax</p>
-//             </div>
-//           </a>
-//         </li>
-//         <li class="container hover">
-//           <a href="item.php">
-//             <img src="images/item4.jpg">
-//             <div class="item">
-//               <p class="item__title">プロダクトタイトルプロダクトタイトル</p>
-//               <p class="item__price">&yen;99,999 +tax</p>
-//             </div>
-//           </a>
-//         </li>
-//         <li class="container hover">
-//           <a href="item.php">
-//             <img src="images/item5.jpg">
-//             <div class="item">
-//               <p class="item__title">プロダクトタイトルプロダクトタイトル</p>
-//               <p class="item__price">&yen;99,999 +tax</p>
-//             </div>
-//           </a>
-//         </li>
-//         <li class="container hover">
-//           <a href="item.php">
-//             <img src="images/item6.jpg">
-//             <div class="item">
-//               <p class="item__title">プロダクトタイトルプロダクトタイトル</p>
-//               <p class="item__price">&yen;99,999 +tax</p>
-//             </div>
-//           </a>
-//         </li>
-//         <li class="container hover">
-//           <a href="item.php">
-//             <img src="images/item7.jpg">
-//             <div class="item">
-//               <p class="item__title">プロダクトタイトルプロダクトタイトル</p>
-//               <p class="item__price">&yen;99,999 +tax</p>
-//             </div>
-//           </a>
-//         </li>
-//         <li class="container hover">
-//           <a href="item.php">
-//             <img src="images/item8.jpg">
-//             <div class="item">
-//               <p class="item__title">プロダクトタイトルプロダクトタイトル</p>
-//               <p class="item__price">&yen;99,999 +tax</p>
-//             </div>
-//           </a>
-//         </li>
-//       </ul>
-//       <a class="btn hover" href="products.php">View More</a>
-//     </div>
-// </main>
-    
+<?php
 }
- ?>
+?>
