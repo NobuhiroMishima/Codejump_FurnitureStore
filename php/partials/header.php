@@ -15,10 +15,10 @@ function header() {
 </head>
 <body>
   <header class="header menu__cover">
-    <h1><a href="<?php echo BASE_CONTEXT_PATH ?>"><img src="<?php echo BASE_IMAGE_PATH ?>logo.svg"></a></h1>
+    <h1><a href="<?php the_url('/') ?>"><img src="<?php echo BASE_IMAGE_PATH ?>logo.svg"></a></h1>
     <nav class="header__nav">
       <ul class="header__ul">
-        <li class="header__li item"><a href="#">PRODUCTS</a></li>
+        <li class="header__li item"><a href="<?php the_url('product'); ?>">PRODUCTS</a></li>
         <li class="header__li item"><a href="#">ABOUT</a></li>
         <li class="header__li item"><a href="#">COMPANY</a></li>
         <li class="header__li item"><a href="#">CONTACT</a></li>

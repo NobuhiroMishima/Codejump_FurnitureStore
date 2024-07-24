@@ -1,7 +1,5 @@
 <?php
 
-use function lib\route;
-
 require_once 'config.php';
 
 //Library
@@ -21,7 +19,10 @@ require_once SOURCE_BASE . 'partials/footer.php';
 
 // View
 require_once SOURCE_BASE . 'views/home.php';
+require_once SOURCE_BASE . 'views/product.php';
 
+
+use function lib\route;
 
 session_start();
 try {

@@ -19,7 +19,7 @@ function index($items){
         </li>
         <?php endforeach; ?>
       </ul>
-      <a class="btn hover" href="products.php">View More</a>
+      <a class="btn hover" href="<?php the_url('product'); ?>">View More</a>
     </div>
 </main>
 
