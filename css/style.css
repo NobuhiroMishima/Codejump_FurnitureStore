@@ -41,6 +41,14 @@
   transform: rotate(45deg) translateY(-4px);
 }
 
+.error {
+  max-width: 1360px;
+  margin: 120px auto;
+  text-align: center;
+  font-size: 26px;
+  font-weight: bold;
+}
+
 .font-xs, .footer p {
   font-size: 10px;
   color: #333333;

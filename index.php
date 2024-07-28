@@ -30,7 +30,6 @@ try {
   \partials\header();
 
   $url = parse_url(CURRENT_URI);
-  var_dump($url);
   $rpath = trim(str_replace(BASE_CONTEXT_PATH, '', $url['path']), '/');
   $method = strtolower($_SERVER['REQUEST_METHOD']);
   
