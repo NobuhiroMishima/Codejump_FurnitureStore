@@ -1,0 +1,67 @@
+@use "../globals/variables" as *;
+@use "../parts/common" as *;
+
+.content{
+    & .detail{
+        display: flex;
+        flex-direction: column;
+        @media screen and (min-width: $breakpoints){
+            flex-direction: row;
+        }
+
+        &__img{
+            margin-bottom: 33px;
+            @media screen and (min-width: $breakpoints){
+                width: 29.4%;
+                margin-right: 64px;
+                margin-bottom: 0;
+            }
+        }
+
+        &__body{
+            margin-bottom: 68px;
+            @media screen and (min-width: $breakpoints){
+                width: 331px;
+            }
+
+            & .description{
+                margin-bottom: 22px;
+                font-size: 14px;
+                color: $cBlack;
+                @media screen and (min-width: $breakpoints){
+                    margin-bottom: 25px;
+                }
+            }
+
+            & .price{
+                margin-bottom:34px;
+                font-size: 12px;
+                color: $cBlack;
+            }
+
+            & .propaty{
+                font-size: 12px;
+                color: $cBlack;
+                & dt{
+                    float: left;
+                    clear: left ;
+                    width: 73px;
+                    margin-right: 28px
+                }
+
+                & dd{
+                    float: left;
+                }
+            }
+
+        }
+
+    }
+    & .back{
+        text-decoration: none;
+        color: $cBlack;
+        font-size: 12px;
+        text-align: center;
+        display: block;
+    }
+}

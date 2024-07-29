@@ -43,7 +43,7 @@
 
 .error {
   max-width: 1360px;
-  margin: 120px auto;
+  padding: 120px 40px;
   text-align: center;
   font-size: 26px;
   font-weight: bold;
@@ -213,4 +213,67 @@
 }
 .pagenation ul li.page:last-child {
   margin: 0;
+}
+
+.content .detail {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 900px) {
+  .content .detail {
+    flex-direction: row;
+  }
+}
+.content .detail__img {
+  margin-bottom: 33px;
+}
+@media screen and (min-width: 900px) {
+  .content .detail__img {
+    width: 29.4%;
+    margin-right: 64px;
+    margin-bottom: 0;
+  }
+}
+.content .detail__body {
+  margin-bottom: 68px;
+}
+@media screen and (min-width: 900px) {
+  .content .detail__body {
+    width: 331px;
+  }
+}
+.content .detail__body .description {
+  margin-bottom: 22px;
+  font-size: 14px;
+  color: #333333;
+}
+@media screen and (min-width: 900px) {
+  .content .detail__body .description {
+    margin-bottom: 25px;
+  }
+}
+.content .detail__body .price {
+  margin-bottom: 34px;
+  font-size: 12px;
+  color: #333333;
+}
+.content .detail__body .propaty {
+  font-size: 12px;
+  color: #333333;
+}
+.content .detail__body .propaty dt {
+  float: left;
+  clear: left;
+  width: 73px;
+  margin-right: 28px;
+}
+.content .detail__body .propaty dd {
+  float: left;
+}
+.content .back {
+  text-decoration: none;
+  color: #333333;
+  font-size: 12px;
+  text-align: center;
+  display: block;
 }
