@@ -7,6 +7,7 @@
         flex-direction: column;
         @media screen and (min-width: $breakpoints){
             flex-direction: row;
+            margin-bottom: 64px;
         }
 
         &__img{
@@ -22,6 +23,7 @@
             margin-bottom: 68px;
             @media screen and (min-width: $breakpoints){
                 width: 331px;
+                margin-bottom: 0;
             }
 
             & .description{
@@ -58,10 +60,11 @@
 
     }
     & .back{
-        text-decoration: none;
-        color: $cBlack;
         font-size: 12px;
         text-align: center;
-        display: block;
+        & .back-link{
+            text-decoration: none;
+            color: $cBlack;
+        }
     }
 }

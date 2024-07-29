@@ -222,6 +222,7 @@
 @media screen and (min-width: 900px) {
   .content .detail {
     flex-direction: row;
+    margin-bottom: 64px;
   }
 }
 .content .detail__img {
@@ -240,6 +241,7 @@
 @media screen and (min-width: 900px) {
   .content .detail__body {
     width: 331px;
+    margin-bottom: 0;
   }
 }
 .content .detail__body .description {
@@ -271,9 +273,10 @@
   float: left;
 }
 .content .back {
-  text-decoration: none;
-  color: #333333;
   font-size: 12px;
   text-align: center;
-  display: block;
+}
+.content .back .back-link {
+  text-decoration: none;
+  color: #333333;
 }
