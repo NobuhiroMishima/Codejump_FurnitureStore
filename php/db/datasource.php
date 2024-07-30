@@ -33,6 +33,14 @@ class DataSource{
         }
 
     }
+
+    public function selectOne($sql = "", $params = [], $type = '', $cls = '') {
+
+        $result = $this->select($sql, $params, $type, $cls);
+        return count($result) > 0 ? $result[0] : false;
+
+    }
+    
     private function executeSql($sql, $params) {
 
         $stmt = $this->conn->prepare($sql);

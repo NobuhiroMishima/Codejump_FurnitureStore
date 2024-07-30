@@ -10,7 +10,7 @@ function index($items, $page){
         <ul>
           <?php foreach($items as $item): ?>
           <li class="container hover">
-            <a href="item.php">
+            <a href="<?php the_url('detail?item_id=' . $item->id) ?>">
               <img src="<?php echo BASE_IMAGE_PATH . $item->img_path ?>">
               <div class="item">
                 <p class="item__title"><?php echo $item->name ?></p>

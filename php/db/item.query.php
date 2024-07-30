@@ -17,4 +17,15 @@ class ItemQuery{
         return $result;
 
     }
+
+    public static function fetchItem($item){
+        $db = new DataSource;
+        $sql = 'select * from mst_items where id = :id';
+
+        $result = $db->selectOne($sql, [
+            ':id' => $item->id
+        ], DataSource::CLS, ItemModel::class);
+
+        return $result;
+    }
 }

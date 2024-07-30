@@ -7,4 +7,3 @@ function get(){
     $items = ItemQuery::fetchItems();
     \view\home\index($items);
 }
-?>

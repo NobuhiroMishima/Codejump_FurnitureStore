@@ -20,6 +20,7 @@ require_once SOURCE_BASE . 'partials/footer.php';
 // View
 require_once SOURCE_BASE . 'views/home.php';
 require_once SOURCE_BASE . 'views/product.php';
+require_once SOURCE_BASE . 'views/detail.php';
 
 
 use function lib\route;
