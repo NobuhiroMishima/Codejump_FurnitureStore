@@ -21,6 +21,8 @@ require_once SOURCE_BASE . 'partials/footer.php';
 require_once SOURCE_BASE . 'views/home.php';
 require_once SOURCE_BASE . 'views/product.php';
 require_once SOURCE_BASE . 'views/detail.php';
+require_once SOURCE_BASE . 'views/about.php';
+require_once SOURCE_BASE . 'views/company.php';
 
 
 use function lib\route;

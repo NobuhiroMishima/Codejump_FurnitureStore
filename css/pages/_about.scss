@@ -1,0 +1,10 @@
+.content{
+    & .about{
+        max-width: 600px;
+        & .about__body{
+            margin-bottom: 30px;
+            font-size: 14px;
+        }
+    }
+
+}

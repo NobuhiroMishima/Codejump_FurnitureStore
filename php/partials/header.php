@@ -19,9 +19,9 @@ function header() {
     <nav class="header__nav">
       <ul class="header__ul">
         <li class="header__li item"><a href="<?php the_url('product?page=1'); ?>">PRODUCTS</a></li>
-        <li class="header__li item"><a href="#">ABOUT</a></li>
-        <li class="header__li item"><a href="#">COMPANY</a></li>
-        <li class="header__li item"><a href="#">CONTACT</a></li>
+        <li class="header__li item"><a href="<?php the_url('about'); ?>">ABOUT</a></li>
+        <li class="header__li item"><a href="<?php the_url('company'); ?>">COMPANY</a></li>
+        <li class="header__li item"><a href="mailto:xxxxx@xxx.xxx?subject=お問い合わせ">CONTACT</a></li>
       </ul>
     </nav>
     <button class="menu__btn">

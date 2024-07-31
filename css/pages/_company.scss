@@ -1,0 +1,48 @@
+@use "../globals/variables" as *;
+
+.content{
+    & .company{
+        max-width: 600px;
+        margin-bottom: 20px;
+        & dt{
+            font-size: 14px;
+            padding: 20px 10px 5px 10px;
+            @media screen and (min-width:$breakpoints) {
+                border-bottom: 1px solid $cBorder;
+                padding: 20px 10px;
+                float: left;
+                width: 30%;
+            }
+            &:last-of-type{
+                border-bottom: none;
+            }
+        }
+        & dd{
+            font-size: 14px;
+            padding: 5px 10px 20px 10px;
+            border-bottom: 1px solid $cBorder;
+            @media screen and (min-width:$breakpoints) {
+                padding: 20px 10px;
+            }
+            &:last-child{
+                border-bottom: none;
+            }
+            & ul{
+                flex-direction: column;
+                & li{
+                    margin: 0;
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    & iframe{
+        filter: grayscale(100%);
+        height: 300px;
+        width: 100%;
+        @media screen and (min-width:$breakpoints) {
+            max-width: 600px;
+        }
+    }
+}
